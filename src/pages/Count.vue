@@ -1,32 +1,19 @@
 <template>
 <div class="container">
-  
+  <br><br>
    <button @click="increment">+</button>
-   <p>value:{{ value }}</p>
-   <button @click="decrement">-</button>
-   
-    <!--<button @click="decrement">-</button>-->
+   <br>
+   <p>value:{{value}}</p>
+  <button @click="decrement">-</button>
       
 </div>
 </template>
-
+s
 
 <script>
-import {actionTypes} from "./store/index"
+import {actionTypes} from "../components/store/Counter"
 import {mapState} from "vuex"
-/*export default {
-    name:'Count',
-     
-data(){
-    return{
-       count:0
-    }
-},
-methods:{
-    increment(){
-        this.count++
-    }
-}*/
+
 
 export default {
     name:'Count',
@@ -46,7 +33,7 @@ export default {
 
 computed:mapState({
   value:state=>{console.log(state) 
-  return state.counter}
+  return state.counter.counter}
 })
 }
 
