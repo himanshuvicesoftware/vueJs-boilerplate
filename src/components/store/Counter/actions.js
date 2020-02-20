@@ -1,7 +1,9 @@
+import * as types from './Counter.mutations.types'
+
 export const increment = ({ commit }) => {
-  commit('INCREMENT')
+  commit(types.COUNTER_INCREMENT)
 }
 
 export const decrement = ({ commit }) => {
-  commit('DECREMENT')
+  commit(types.COUNTER_DECREMENT)
 }

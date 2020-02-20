@@ -1,1 +1,3 @@
-export const getStatus = state => state.counter
+export default {
+    getStatus: state => state.counter
+}

@@ -1,8 +1,10 @@
+import * as types from './Counter.mutations.types'
+
 export default {
-  ['INCREMENT'](state) {
-    state.counter = state.counter + 1
+  [types.COUNTER_INCREMENT](state) {
+    state.counter++
   },
-  ['DECREMENT'](state) {
-    state.counter = state.counter - 1
+  [types.COUNTER_DECREMENT](state) {
+    state.counter--
   }
 }
